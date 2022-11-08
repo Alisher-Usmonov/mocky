@@ -268,17 +268,17 @@
         },
         {
             "id": 20,
-            "drivers": "Bashir Mohammed",
-            "vehicleId": 256256,
-            "model": 256256,
-            "licenseState": 15151561,
-            "eld": 15151,
+            "drivers": "John Smith",
+            "vehicleId": 77777,
+            "model": 777777,
+            "licenseState": 75757575,
+            "eld": 7575,
             "address": "CB:66:21:99:78:3C",
             "notes": "CB:66:21:99:78:3C",
             "vin": "2022.01.30 17:42",
             "activatedDate": "2022.02.04 10:54",
-            "terminated": "iPhone 13 pro",
-            "status": false
+            "terminated": "iPhone 14 Eski",
+            "status": true
         }
     ],
     "drivers": [
