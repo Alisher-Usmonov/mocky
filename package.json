@@ -1,0 +1,23 @@
+{
+  "name": "mocky",
+  "version": "1.0.0",
+  "description": "Mock API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alisher-Usmonov/mocky.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alisher-Usmonov/mocky/issues"
+  },
+  "homepage": "https://github.com/Alisher-Usmonov/mocky#readme",
+  "dependencies": {
+    "json-server": "^0.17.1"
+  }
+}
