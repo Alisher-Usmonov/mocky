@@ -280,5 +280,12 @@
             "terminated": "iPhone 13 pro",
             "status": false
         }
+    ],
+    "drivers": [
+        {
+            "id": 1,
+             "name": "Abdulvohid",
+              "truck_num" : 777
+         }
     ]
 }
