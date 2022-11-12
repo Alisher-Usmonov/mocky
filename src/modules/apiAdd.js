@@ -1,8 +1,9 @@
 const fs = require("node:fs");
 const path = require("node:path");
 
-module.exports = async (folder) => {
+; (async () => {
   try {
+    const folder = process.argv[2]?.split("=")[1];
     const filesPath = path.join(__dirname, "..", folder);
     const dbPath = path.join(__dirname, "..", "..", "db.json");
 
@@ -22,6 +23,8 @@ module.exports = async (folder) => {
           if (!err) {
             console.log("✅ Routes added successfully. Now you can push it")
             process.exit();
+          } else {
+            console.log("👻 Something went wrong!")
           }
         })
       };
@@ -29,4 +32,4 @@ module.exports = async (folder) => {
   } catch (err) {
     console.log(err);
   }
-}
+})()
