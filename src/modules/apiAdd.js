@@ -5,7 +5,7 @@ module.exports = async (folder) => {
   try {
     const filesPath = path.join(__dirname, "..", folder);
     const dbPath = path.join(__dirname, "..", "..", "db.json");
-    console.log(dbPath);
+
     fs.readdir(filesPath, (err, files) => {
       if (!err) {
 
@@ -23,6 +23,8 @@ module.exports = async (folder) => {
             console.log(err.message);
           }
         })
+        console.log("✅ Routes added successfully. Now you can push it")
+        process.exit();
       }
     })
   } catch (err) {
