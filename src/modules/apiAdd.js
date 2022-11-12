@@ -24,7 +24,7 @@ module.exports = async (folder) => {
           }
         })
         const runType = process.argv[2]?.split("=")[1]
-        if (runType === "build") {
+        if (runType === "dev") {
           console.log("✅ Routes added successfully. Now you can push it")
           process.exit();
         }
