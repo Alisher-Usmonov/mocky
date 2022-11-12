@@ -20,14 +20,11 @@ module.exports = async (folder) => {
 
         fs.writeFile(dbPath, JSON.stringify(data), (err) => {
           if (!err) {
-            const runType = process.argv[2]?.split("=")[1]
-            if (runType === "dev") {
-              console.log("✅ Routes added successfully. Now you can push it")
-              process.exit();
-            }
+            console.log("✅ Routes added successfully. Now you can push it")
+            process.exit();
           }
         })
-      }
+      };
     })
   } catch (err) {
     console.log(err);
