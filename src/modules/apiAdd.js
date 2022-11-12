@@ -23,8 +23,11 @@ module.exports = async (folder) => {
             console.log(err.message);
           }
         })
-        console.log("✅ Routes added successfully. Now you can push it")
-        process.exit();
+        const runType = process.argv[2]?.split("=")[1]
+        if (runType === "build") {
+          console.log("✅ Routes added successfully. Now you can push it")
+          process.exit();
+        }
       }
     })
   } catch (err) {
