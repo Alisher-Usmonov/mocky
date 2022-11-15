@@ -6,6 +6,8 @@ module.exports = () => {
     driver: faker.name.fullName({ sex: "male" }),
     truck_number: faker.datatype.number({ min: 1000, max: 9999 }),
     status: faker.helpers.arrayElement(["DR", "SB", "ON", "OFF"]),
+    lat: faker.address.latitude(),
+    lon: faker.address.longitude(),
     location: {
       address: faker.address.streetAddress(),
       time: faker.date.recent(),
