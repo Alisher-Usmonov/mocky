@@ -6,7 +6,7 @@ module.exports = () => {
     driver: faker.name.fullName({ sex: "male" }),
     truck_number: faker.datatype.number({ min: 1000, max: 9999 }),
     status: faker.helpers.arrayElement(["DR", "SB", "ON", "OFF"]),
-    coordinates: new Array(4).fill(undefined).map(() => ({
+    coordinates: new Array(2).fill(undefined).map(() => ({
       lat: Number(faker.address.latitude()),
       lng: Number(faker.address.longitude()),
     })),
