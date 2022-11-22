@@ -26,7 +26,7 @@ module.exports = () => {
     confirm_password: faker.internet.password(),
     user_name: faker.internet.userName(),
     email: faker.internet.email(),
-    phone: faker.phone.number("###_###_####"),
+    phone: faker.phone.number("### ## ### ## ##"),
   }));
 
   users.unshift(user);

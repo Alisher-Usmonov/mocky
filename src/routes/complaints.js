@@ -5,7 +5,7 @@ module.exports = () => {
 		id: index + 1,
 		driver: faker.name.fullName(),
 		truck_num: faker.vehicle.vrm(),
-		errors: faker.helpers.arrayElement(["Disconnect", "9.91 mi N of Nashville, TN"]),
+		errors: faker.helpers.arrayElement([{ label: "Disconnect", key: "disconnect", count: faker.random.numeric(2) }, { label: "Unidentified", key: "unidentified", count: faker.random.numeric(2) }]),
 		status: faker.helpers.arrayElement(["Driving", "Sleeping", "On rest"]),
 		start: faker.date.past(),
 		address: faker.address.streetAddress(),
