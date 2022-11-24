@@ -13,6 +13,21 @@ module.exports = () => {
     user_name: "Xushnudbek",
     email: "test@mail.ru",
     phone: "+998 90 111 11 11",
+    role: "company",
+  };
+  const auditor = {
+    id: 14,
+    first_name: "Mirjalol",
+    last_name: "Norqulov",
+    company_name: "Wasaf",
+    usdot: "12345678",
+    time_zone: "Uzb",
+    password: "123456",
+    confirm_password: "123456",
+    user_name: "mirjalol",
+    email: "auditor@gmail.com",
+    phone: "+998 94 111 11 11",
+    role: "auditor",
   };
 
   const users = new Array(12).fill(undefined).map((_, index) => ({
@@ -27,8 +42,10 @@ module.exports = () => {
     user_name: faker.internet.userName(),
     email: faker.internet.email(),
     phone: faker.phone.number("### ## ### ## ##"),
+    role: faker.helpers.arrayElement(["company", "auditor"]),
   }));
 
+  users.unshift(auditor);
   users.unshift(user);
 
   return users;
