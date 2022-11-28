@@ -1,7 +1,7 @@
 const { faker } = require("@faker-js/faker");
 
 module.exports = () => {
-  const users = new Array(12).fill(undefined).map((_, index) => ({
+  const users = new Array(100).fill(undefined).map((_, index) => ({
     id: index + 1,
     first_name: faker.name.firstName(),
     last_name: faker.name.lastName(),
