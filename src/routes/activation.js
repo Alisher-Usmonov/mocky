@@ -10,5 +10,13 @@ module.exports = () => {
     distance: faker.address.zipCode(),
     endOdometr: faker.random.numeric(8),
     engHour: faker.random.numeric(8),
+    reportType: faker.helpers.arrayElement([
+      "IFTA",
+      "Violation",
+      "Drivers",
+      "Log Auditing",
+      "Overspeed",
+      "Drivers assigment",
+    ]),
   }));
 };
